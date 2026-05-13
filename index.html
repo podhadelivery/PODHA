@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Podha - Nature at your doorstep</title>
+  <!-- Primary Meta Tags -->
+<meta name="title" content="Podha - Nature at your doorstep | Plants Delivery in Shikohabad">
+<meta name="description" content="Podha delivers fresh plants, pots, and soil to your home in Shikohabad. Same-day delivery, COD available. 60+ plants to choose from. WhatsApp 9058960992 to order.">
+<meta name="keywords" content="plants in Shikohabad, plant delivery Shikohabad, buy plants online, Podha, nursery near me">
+<meta name="author" content="Podha">
+
+<!-- Open Graph / Facebook Meta Tags -->
+<meta property="og:title" content="Podha - Plants Delivery in Shikohabad">
+<meta property="og:description" content="Fresh plants delivered to your doorstep. Same-day delivery. COD available.">
+<meta property="og:type" content="website">
+
+<link rel="canonical" href="https://thepodha.in">
+<!-- Twitter Meta Tags -->
+<meta name="twitter:title" content="Podha - Nature at your doorstep">
+<meta name="twitter:description" content="Plants delivered to your home in Shikohabad.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; background: #f5fef7; color: #1e3a2f; padding: 0 12px 40px; }
+
+    .offers-container {
+      background: #2e7d32;
+      color: white;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 10px 0;
+      margin: -12px -12px 0 -12px;
+      width: calc(100% + 24px);
+    }/* Accordion / Collapsible Offers */
+.offer-item {
+  margin: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.offer-title {
+  padding: 12px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #1e3a2f;
+  background: #f9f9f9;
+  border-radius: 10px;
+  transition: background 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offer-title:hover {
+  background: #e8f5e9;
+}
+
+.offer-title::after {
+  content: "▶";
+  font-size: 12px;
+  color: #2e7d32;
+  transition: transform 0.2s;
+}
+
+.offer-item.active .offer-title::after {
+  transform: rotate(90deg);
+}
+
+.offer-description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 10px;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.offer-item.active .offer-description {
+  max-height: 150px;
+  padding: 8px 10px 12px 10px;
+}
+    .offers-slider {
+      display: inline-block;
+      animation: slide 15s linear infinite;
+    }
+    .offers-slider span {
+      display: inline-block;
+      padding: 0 30px;
+      font-size: 14px;
+      font-weight: 500;
+      vertical-align: middle;
+      line-height: 1.2;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .header { position: sticky; top: 0; background: white; padding: 12px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; border-bottom: 1px solid #e0f2e0; margin-bottom: 16px; }
+    .logo { display: flex; align-items: center; gap: 8px; }
+    .logo img { height: 50px; width: auto; }
+    .logo h1 { font-size: 22px; color: #2e7d32; margin: 0; }
+    .tagline { font-size: 11px; color: #666; margin-top: 2px; }
+    .search-bar { padding: 8px 12px; border: 1px solid #ddd; border-radius: 24px; width: 180px; font-size: 14px; }
+    .menu-btn { background: none; border: none; font-size: 28px; cursor: pointer; color: #2e7d32; }
+
+    .breadcrumb {
+      text-align: center;
+      margin: 15px 0;
+      font-size: 13px;
+      color: #666;
+      background: white;
+      padding: 10px;
+      border-radius: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .breadcrumb span { cursor: pointer; color: #2e7d32; font-weight: 500; }
+    .breadcrumb span:hover { text-decoration: underline; }
+
+    .side-menu { position: fixed; top: 0; left: -280px; width: 280px; height: 100%; background: white; box-shadow: 2px 0 10px rgba(0,0,0,0.2); z-index: 1000; transition: left 0.3s ease; padding: 20px; overflow-y: auto; }
+    .side-menu.open { left: 0; }
+    .close-menu { background: none; border: none; font-size: 24px; float: right; cursor: pointer; color: #2e7d32; }
+    .menu-item { display: block; padding: 12px 0; color: #1e3a2f; text-decoration: none; border-bottom: 1px solid #eee; font-weight: 500; cursor: pointer; }
+
+    .section-title { font-size: 22px; margin: 30px 0 16px; color: #2e7d32; border-left: 4px solid #2e7d32; padding-left: 12px; }
+    .products-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .product-card { background: white; border-radius: 16px; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); cursor: pointer; border: 1px solid #e8f5e9; transition: transform 0.2s; }
+    .product-card:active { transform: scale(0.98); }
+    .product-img { width: 100%; height: 140px; object-fit: cover; border-radius: 12px; background: #e8f5e9; }
+    .product-name { font-size: 16px; font-weight: bold; margin: 10px 0 4px; }
+    .price { margin: 6px 0; }
+    .mrp { text-decoration: line-through; color: #999; font-size: 12px; }
+    .sale-price { color: #2e7d32; font-size: 18px; font-weight: bold; margin-left: 8px; }
+    .quality-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+    .quality-tag { background: #e8f5e9; padding: 4px 8px; border-radius: 20px; font-size: 10px; color: #2e7d32; }
+    .stock { font-size: 12px; margin: 6px 0; }
+    .in-stock { color: #2e7d32; font-weight: bold; }
+    .product-actions { display: flex; gap: 10px; margin-top: 10px; }
+    .action-btn { background: none; border: 1px solid #ddd; padding: 6px 10px; border-radius: 20px; font-size: 12px; cursor: pointer; }
+
+    .delivery-info { background: #e8f5e9; border-radius: 20px; padding: 20px; text-align: center; margin: 30px 0; }
+    .whatsapp-btn { background: #25D366; border: none; color: white; padding: 12px 20px; border-radius: 40px; font-weight: bold; width: 100%; margin: 20px 0; cursor: pointer; font-size: 16px; }
+
+    .reviews-section { background: #f9f9f9; border-radius: 20px; padding: 20px; margin: 30px 0; }
+    .review-item { margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+
+    .footer { background: #1e3a2f; color: white; padding: 30px 16px; margin-top: 30px; border-radius: 20px; text-align: center; }
+    .payment-methods { margin-top: 16px; }
+
+    .back-to-top { position: fixed; bottom: 20px; right: 20px; background: #2e7d32; color: white; border: none; border-radius: 50%; width: 48px; height: 48px; font-size: 24px; cursor: pointer; display: none; z-index: 999; display: flex; align-items: center; justify-content: center; line-height: 1; }
+
+    .image-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 2000; justify-content: center; align-items: center; }
+    .modal-content { background: white; border-radius: 24px; max-width: 500px; width: 90%; max-height: 90vh; overflow-y: auto; position: relative; padding: 20px; }
+    .close-modal { position: absolute; top: 15px; right: 20px; background: none; border: none; font-size: 28px; cursor: pointer; z-index: 10; }
+    .main-image-container { position: relative; display: flex; align-items: center; justify-content: center; margin: 10px 0; }
+    .main-image { width: 100%; max-height: 300px; object-fit: contain; border-radius: 16px; touch-action: pan-y pinch-zoom; }
+    .thumbnail-container { display: flex; justify-content: center; gap: 12px; margin: 16px 0; flex-wrap: wrap; }
+    .thumbnail { width: 60px; height: 60px; object-fit: cover; border-radius: 12px; cursor: pointer; border: 2px solid transparent; }
+    .thumbnail.active { border-color: #2e7d32; }
+    .plant-name { font-size: 22px; font-weight: bold; text-align: center; margin: 12px 0 8px; }
+    .price-section { text-align: center; margin: 10px 0; }
+    .sale-price { font-size: 28px; font-weight: bold; color: #2e7d32; }
+    .mrp-price { font-size: 18px; color: #999; text-decoration: line-through; margin-left: 10px; }
+    .save-badge { background: #ff5722; color: white; padding: 4px 10px; border-radius: 20px; font-size: 12px; margin-left: 10px; display: inline-block; }
+    .stock-status { text-align: center; margin: 10px 0; }
+    .benefits { margin: 16px 0; padding: 12px; background: #f5fef7; border-radius: 16px; }
+    .benefit-item { padding: 6px 0; font-size: 14px; }
+
+    .small-popup { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 3000; justify-content: center; align-items: center; }
+    .small-popup-content { background: white; border-radius: 24px; max-width: 350px; width: 90%; padding: 25px; text-align: center; position: relative; }
+    .close-small-popup { position: absolute; top: 10px; right: 15px; background: none; border: none; font-size: 24px; cursor: pointer; }
+
+    .image-dots {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 8px;
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      background: #ccc;
+      border-radius: 50%;
+      transition: background 0.2s;
+    }
+    .dot.active {
+      background: #2e7d32;
+    }
+
+    /* Cart Sidebar - SLIDES FROM RIGHT */
+    .cart-sidebar {
+      position: fixed;
+      top: 0;
+      right: -400px;
+      width: 380px;
+      height: 100%;
+      background: white;
+      box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+      z-index: 1001;
+      transition: right 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .cart-sidebar.open {
+      right: 0;
+    }
+    .cart-sidebar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 1px solid #eee;
+      background: #2e7d32;
+      color: white;
+    }
+    .cart-sidebar-header h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .close-cart {
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: white;
+    }
+    .cart-scrollable {
+      flex: 1;
+      overflow-y: auto;
+      padding: 15px;
+    }
+    .cart-sidebar-items {
+      padding: 0;
+    }
+    .cart-item {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #eee;
+    }
+    .cart-item-image {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 12px;
+      background: #e8f5e9;
+    }
+    .cart-item-details {
+      flex: 1;
+    }
+    .cart-item-name {
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    .cart-item-price {
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+    .cart-item-mrp {
+      text-decoration: line-through;
+      color: #999;
+      font-size: 11px;
+    }
+    .cart-item-sale {
+      color: #2e7d32;
+      font-weight: bold;
+    }
+    .cart-item-discount {
+      background: #ff5722;
+      color: white;
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 12px;
+      margin-left: 5px;
+    }
+    .cart-item-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .quantity-btn {
+      background: #f0f0f0;
+      border: none;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .quantity-value {
+      font-size: 14px;
+      min-width: 25px;
+      text-align: center;
+    }
+    .remove-item {
+      background: none;
+      border: none;
+      color: #d32f2f;
+      font-size: 12px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    .cart-sidebar-footer {
+      padding: 15px 20px;
+      border-top: 1px solid #eee;
+      background: white;
+    }
+    .cart-total {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    .delivery-fee-line {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+      font-size: 14px;
+    }
+    .free-delivery {
+      text-decoration: line-through;
+      color: #999;
+    }
+    .savings {
+      color: #2e7d32;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+    .discount-badge-cart {
+      background: #ff5722;
+      color: white;
+      padding: 8px;
+      border-radius: 12px;
+      text-align: center;
+      margin: 15px 0;
+      font-size: 13px;
+    }
+    .coupon-section {
+      margin: 15px 0;
+      padding: 10px;
+      background: #f9f9f9;
+      border-radius: 12px;
+    }
+    .coupon-input {
+      display: flex;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .coupon-input input {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+    }
+    .coupon-input button {
+      background: #2e7d32;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .you-may-like {
+      margin: 15px 0;
+      padding: 10px;
+      background: #f0f8f0;
+      border-radius: 12px;
+    }
+    .like-items {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      margin-top: 10px;
+    }
+    .like-item {
+      min-width: 100px;
+      background: white;
+      padding: 8px;
+      border-radius: 12px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .like-item img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .like-item-name {
+      font-size: 11px;
+      margin-top: 5px;
+    }
+    .like-item-price {
+      font-size: 10px;
+      color: #2e7d32;
+      font-weight: bold;
+    }
+    .checkout-btn {
+      background: #25D366;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      width: 100%;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .cart-icon-btn {
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      position: relative;
+    }
+    .cart-count {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      background: #d32f2f;
+      color: white;
+      font-size: 10px;
+      border-radius: 50%;
+      padding: 2px 6px;
+      min-width: 16px;
+    }
+
+    /* Toast Notification */
+    #toast {
+      visibility: hidden;
+      min-width: 250px;
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      border-radius: 30px;
+      padding: 12px;
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2000;
+      font-size: 14px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    #toast.show {
+      visibility: visible;
+      opacity: 1;
+    }
+    /* Center and limit width of main content */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Center the delivery-info section */
+.delivery-info {
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+/* Center the footer content */
+.footer {
+  text-align: center;
+}
+
+/* Make reviews section centered */
+.reviews-section {
+  max-width: 500px;
+  margin: 30px auto;
+}
+  </style>
+</head>
+<body>
+
+<!-- Toast Notification -->
+<div id="toast">✅ Item added to cart!</div>
+
+<!-- Cart Sidebar (Slides from RIGHT) -->
+<div id="cartSidebar" class="cart-sidebar">
+  <div class="cart-sidebar-header">
+    <h3>🛒 MY CART (<span id="cartItemCount">0</span>)</h3>
+    <button class="close-cart" id="closeCartBtn">✖</button>
+  </div>
+  <div class="cart-scrollable">
+    <div class="cart-sidebar-items" id="cartSidebarItems">
+      <p style="text-align: center; color: #666;">Your cart is empty</p>
+    </div>
+    <div class="you-may-like" id="youMayLikeWrapper">
+      <div>✨ You might also like</div>
+      <div class="like-items" id="youMayLike"></div>
+    </div>
+    <div class="coupon-section">
+      <div>💸 Apply Coupon</div>
+      <div class="coupon-input">
+        <input type="text" placeholder="Enter coupon code" id="couponInput">
+        <button id="applyCouponBtn">Apply</button>
+      </div>
+    </div>
+    <div class="discount-badge-cart">
+      🎉 5% OFF on every order! 🎉<br>
+      <small>Mention on WhatsApp to apply</small>
+    </div>
+    <div id="cartTotalsContainer"></div>
+  </div>
+  <div class="cart-sidebar-footer">
+    <button id="cartCheckoutBtn" class="checkout-btn">📲 Proceed To Pay</button>
+  </div>
+</div>
+
+<div class="offers-container">
+  <div class="offers-slider">
+    <span>🎁 FIRST ORDER → 5% OFF</span>
+    <span>🚚 FREE DELIVERY ON ₹199+</span>
+    <span>🌱 FREE SEED ON ₹999+</span>
+    <span>👥 REFER FRIEND → ₹20 OFF</span>
+   <span>Get 5% off for  📸 Insta Story</span>
+   
+    <span>🎁 FIRST ORDER → 5% OFF</span>
+    <span>🚚 FREE DELIVERY ON ₹199+</span>
+    <span>🌱 FREE SEED ON ₹999+</span>
+
+    <span>👥 REFER FRIEND → ₹20 OFF</span>
+    <span>Get 5% off for  📸 Insta Story</span>
+    
+  </div>
+</div>
+
+<div class="header">
+  <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; width: 100%;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <div class="logo">
+  <img src="https://i.ibb.co/kVrsBCSn/cropped-circle-image.png" alt="Podha Logo" style="height: 50px; width: auto;" loading="eager">
+  <div>
+    <h1>PODHA</h1>
+    <div class="tagline">Nature at your doorstep</div>
+  </div>
+</div>
+    <div style="text-align: center; background: #fff3e0; padding: 5px 12px; border-radius: 30px;">
+      <span style="font-size: 11px; color: #d32f2f;">🔥 Sale ends in</span>
+      <div id="countdownTimer" style="font-size: 14px; font-weight: bold; color: #d32f2f;">00:00:00</div>
+    </div>
+  </div>
+  <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 12px;">
+    <input type="text" class="search-bar" id="searchInput" placeholder="Search plants..." style="flex: 1;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <button id="wishlistIconBtn" style="background: none; border: none; font-size: 24px; cursor: pointer; position: relative;">
+        🤍
+        <span id="wishlistCount" style="position: absolute; top: -8px; right: -8px; background: #d32f2f; color: white; font-size: 10px; border-radius: 50%; padding: 2px 6px; min-width: 16px;">0</span>
+      </button>
+      <button id="cartIconBtn" style="background: none; border: none; font-size: 24px; cursor: pointer; position: relative;">
+        🛒
+        <span id="cartCount" style="position: absolute; top: -8px; right: -8px; background: #d32f2f; color: white; font-size: 10px; border-radius: 50%; padding: 2px 6px; min-width: 16px;">0</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <span id="breadcrumbHome">HOME</span> &nbsp;>&nbsp;
+  <span id="breadcrumbPlants">PLANTS</span> &nbsp;>&nbsp;
+  <span id="breadcrumbSoil">SOIL</span> &nbsp;>&nbsp;
+  <span id="breadcrumbFertilizers">FERTILIZERS</span> &nbsp;>&nbsp;
+  <span id="breadcrumbPots">POTS</span>
+</div>
+
+<div id="sideMenu" class="side-menu">
+  <button class="close-menu" id="closeMenuBtn">✖</button>
+  <div style="margin-top: 40px;">
+    <a class="menu-item" data-section="home">🏠 Home</a>
+    <a class="menu-item" data-section="plants">🌿 Plants</a>
+    <a class="menu-item" data-section="soil">🌾 Soil</a>
+    <a class="menu-item" data-section="fertilizers">💧 Fertilizers</a>
+    <a class="menu-item" data-section="pots">🏺 Pots</a>
+    <div style="height: 1px; background: #eee; margin: 10px 0;"></div>
+    <a class="menu-item" id="offersMenuItem">🎁 Today's Offers</a>
+    <a class="menu-item" id="instagramMenuItem">📷 Follow us on Instagram</a>
+    <div style="height: 1px; background: #eee; margin: 10px 0;"></div>
+    <a class="menu-item" id="aboutUsMenuItem">📖 About Us</a>
+    <a class="menu-item" id="menuWhatsapp">📞 WhatsApp</a>
+    <a class="menu-item" id="menuLocation">📍 Location</a>
+    <a class="menu-item" id="menuShare">🔄 Share</a>
+    <div style="height: 1px; background: #eee; margin: 10px 0;"></div>
+    <a class="menu-item" id="refundMenuItem">🔄 Refund & Replacement</a>
+    <div style="height: 1px; background: #eee; margin: 10px 0;"></div>
+    <div style="text-align: center; margin-top: 20px;">
+      <img src="https://i.ibb.co/s9rG0Xz0/84056.jpg" alt="Podha Logo" style="height: 50px; width: auto; margin-bottom: 10px;">
+      <div style="font-size: 14px; font-weight: bold; color: #2e7d32;">PODHA</div>
+      <div style="font-size: 9px; color: #666;">NATURE AT YOUR DOORSTEPS</div>
+    </div>
+  </div>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: center; margin: 30px 0 16px;">
+  <h2 class="section-title" id="plantsSection" style="margin: 0; border-left: 4px solid #2e7d32; padding-left: 12px; font-size: 18px;">🌱 ALL PLANTS</h2>
+  <select id="sortPlants" style="padding: 6px 10px; border-radius: 20px; border: 1px solid #ddd; background: white; font-size: 12px;">
+    <option value="default">Sort by</option>
+    <option value="price-low-high">Price: Low to High</option>
+    <option value="price-high-low">Price: High to Low</option>
+    <option value="discount-high-low">Discount: High to Low</option>
+    <option value="stock-low-high">Stock: Low to High</option>
+  </select>
+</div>
+
+<div class="products-grid" id="plantsGrid"></div>
+
+<h2 class="section-title" id="soilSection">🪴 SOIL PRODUCTS</h2>
+<div class="products-grid" id="soilGrid"></div>
+
+<h2 class="section-title" id="fertilizerSection">🌾 FERTILIZERS</h2>
+<div class="products-grid" id="fertilizerGrid"></div>
+
+<h2 class="section-title" id="potsSection">🏺 POTS & PLANTERS</h2>
+<div class="products-grid" id="potsGrid"></div>
+
+<div class="reviews-section">
+  <h3 style="color: #2e7d32;">⭐ What Our Customers Say</h3>
+  <div class="review-item"><strong>Ramesh S.</strong> ⭐⭐⭐⭐⭐<br>"Healthy snake plant, well packed. Delivery on time."</div>
+  <div class="review-item"><strong>Priya G.</strong> ⭐⭐⭐⭐⭐<br>"Best quality Tulsi plant I've ordered online."</div>
+<div class="review-item"><strong>Amit K.</strong> ⭐⭐⭐⭐☆<br>"Soil mix is great. Plants are fresh."</div>
+</div>
+
+<div class="delivery-info">
+  <p>✅ Same/Next-day delivery</p>
+  <p>✅ Cash on Delivery + UPI Available</p>
+  <p>✅ Delivery within Shikohabad</p>
+  <p>✅ Fresh plants are priority</p>
+  <p>✅ Refund/Replacement available</p>
+  <button class="whatsapp-btn" id="whatsappBtn">📲 ORDER ON WhatsApp</button>
+</div>
+
+<div class="footer">
+  <p><strong>🌿 PODHA</strong></p>
+  <p>Nature at your doorstep</p>
+  <p>📞 WhatsApp: +91 9058960992</p>
+  <p>⏰ Hours: 9 AM - 7 PM</p>
+  <p>📍 Delivery: 6-7 km of Shikohabad</p>
+  <div class="payment-methods">💳 COD | 📱 UPI (Google Pay, PhonePe) | 💳 Credit/Debit Card</div>
+  <p style="margin-top: 16px;">© 2026 Podha | CASH ON DELIVERY + UPI AVAILABLE</p>
+</div>
+
+<button class="back-to-top" id="backToTopBtn">↑</button>
+
+<div id="offersPopup" class="small-popup">
+  <div class="small-popup-content" style="max-width: 400px;">
+    <button class="close-small-popup" onclick="closeOffersPopup()">✖</button>
+    <h3 style="color: #2e7d32;">🎁 Today's Offers</h3>
+    <div class="offers-list" id="offersList">
+      <div class="offer-item">
+        <div class="offer-title">🎉 FIRST ORDER → 5% OFF</div>
+        <div class="offer-description">Get 5% off on your very first order. Valid for new customers only.</div>
+      </div>
+      <div class="offer-item">
+        <div class="offer-title">🌱 FREE SEED ON ₹999+ order</div>
+        <div class="offer-description">Spend ₹999 or more and get a free seed packet of your choice (Marigold, Tulsi, or Mint). Limited time offer.</div>
+      </div>
+      <div class="offer-item">
+        <div class="offer-title">👥 REFER FRIEND → ₹20 OFF on next order</div>
+        <div class="offer-description">Share Podha with 1 friend. When they order, you both get ₹20 off on your next order.(On minimum order of 199)</div>
+      </div>
+      <div class="offer-item">
+        <div class="offer-title">Get 5% off for  📸 Insta Story </div>
+        <div class="offer-description">Post a story tagging @podha_shikohabad and get 5% off on your next order.Story should include photo and rating of the order.DM us your story screenshot.Valud for once per customer having 99+ followers</div>
+      </div>
+      <div class="offer-item">
+        <div class="offer-title">🚚 FREE DELIVERY ABOVE ₹199</div>
+        <div class="offer-description">Orders of ₹199 or more get free delivery (saving ₹29). Otherwise, delivery fee is ₹29.</div>
+      </div>
+    </div>
+  </div>
+</div>
+    <button onclick="closeOffersPopup()" style="margin-top: 20px; padding: 8px 20px; background: #2e7d32; color: white; border: none; border-radius: 20px;">Close</button>
+  </div>
+</div>
+
+<div id="aboutPopup" class="small-popup">
+  <div class="small-popup-content">
+    <button class="close-small-popup" onclick="closeAboutPopup()">✖</button>
+    <h3 style="color: #2e7d32;">🌿 PODHA</h3>
+    <div style="text-align: left; margin-top: 15px; line-height: 1.6;">
+      <p><strong>Nature at your doorstep</strong></p>
+      <p style="margin-top: 10px;">We started Podha with a simple belief: <strong>Every home deserves a little green.</strong></p>
+      <p style="margin-top: 10px;">Plants are not just decoration. They are life. They breathe with us, grow with us, and make our houses feel like home.</p>
+      <p style="margin-top: 10px;">At Podha, we don't just sell plants. We deliver happiness, freshness, and a piece of nature to your doorstep.</p>
+      <p style="margin-top: 10px;">Every plant is handpicked with love. Every order is packed with care.</p>
+      <p style="margin-top: 10px;">Because we believe — <strong>a small podha can bring big smiles.</strong></p>
+      <p style="margin-top: 15px; text-align: center;">🌱 Podha — Har ghar hariyali.</p>
+    </div>
+    <button onclick="closeAboutPopup()" style="margin-top: 20px; padding: 8px 20px; background: #2e7d32; color: white; border: none; border-radius: 20px;">Close</button>
+  </div>
+</div>
+
+<div id="refundPopup" class="small-popup">
+  <div class="small-popup-content">
+    <button class="close-small-popup" onclick="closeRefundPopup()">✖</button>
+    <h3 style="color: #2e7d32;">🔄 Refund & Replacement Policy</h3>
+    <div style="text-align: left; margin-top: 15px; line-height: 1.6;">
+      <p>🌿 <strong>Replacement Policy:</strong></p>
+      <p>• If you receive a damaged plant, let us know within 24 hours.</p>
+      <p>• We will replace it for free on your next delivery.</p>
+      <p>• Send a photo of the damaged plant on WhatsApp.</p>
+      <p>💰 <strong>Refund Policy:</strong></p>
+      <p>• Refunds are available within a single hours of delivery.</p>
+      <p>• Refund will be processed within 24 hours.</p>
+      <p>• Refund only accepted if plant is dead or severely damaged.</p>
+      <p>📞 <strong>Contact us:</strong> +91 9058960992</p>
+    </div>
+    <button onclick="closeRefundPopup()" style="margin-top: 20px; padding: 8px 20px; background: #2e7d32; color: white; border: none; border-radius: 20px;">Close</button>
+  </div>
+</div>
+
+<div id="wishlistModal" class="small-popup">
+  <div class="small-popup-content" style="max-width: 400px;">
+    <button class="close-small-popup" onclick="closeWishlistModal()">✖</button>
+    <h3 style="color: #2e7d32;">🤍 Your Wishlist</h3>
+    <div id="wishlistItemsList" style="text-align: left; margin-top: 15px; max-height: 300px; overflow-y: auto;"></div>
+    <button id="wishlistCheckoutBtn" style="margin-top: 15px; padding: 10px 20px; background: #25D366; color: white; border: none; border-radius: 30px; width: 100%; font-weight: bold; cursor: pointer;">📲 Order All on WhatsApp</button>
+    <button onclick="closeWishlistModal()" style="margin-top: 10px; padding: 8px 20px; background: #ccc; border: none; border-radius: 30px; width: 100%; cursor: pointer;">Close</button>
+  </div>
+</div>
+
+<div id="imageModal" class="image-modal">
+  <div class="modal-content">
+    <button class="close-modal" id="closeModalBtn">✖</button>
+    <div class="main-image-container">
+      <img id="modalMainImage" class="main-image" src="" alt="Plant">
+    </div>
+    <div class="thumbnail-container" id="thumbnailContainer"></div>
+    <div class="plant-name" id="modalPlantName"></div>
+    <div class="price-section">
+      <span class="sale-price" id="modalSalePrice"></span>
+      <span class="mrp-price" id="modalMrpPrice"></span>
+      <span class="save-badge" id="modalSaveBadge"></span>
+    </div>
+    <div class="stock-status"><span id="modalStock"></span></div>
+    <div class="benefits" id="modalBenefits"></div>
+  </div>
+</div>
+
+<script>
+let currentImages = [];
+let currentIndex = 0;
+
+function startCountdown() {
+  const endTime = new Date().getTime() + (24 * 60 * 60 * 1000);
+  function updateTimer() {
+    const now = new Date().getTime();
+    const distance = endTime - now;
+    if (distance < 0) { document.getElementById('countdownTimer').innerHTML = "Sale Ended!"; return; }
+    const hours = Math.floor(distance / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    document.getElementById('countdownTimer').innerHTML = String(hours).padStart(2,'0') + ":" + String(minutes).padStart(2,'0') + ":" + String(seconds).padStart(2,'0');
+  }
+  updateTimer();
+  setInterval(updateTimer, 1000);
+}
+startCountdown();
+
+// Product Data
+const plants = [
+ 
+  { id: 2, name: "Tulsi Plant", mrp: 45, price: 19, stock: "In Stock", qualities: ["🌿 Medicinal", "🌿 Sacred plant", "🌿 Controls Sugar"], images: ["https://i.ibb.co/8gpBmc2J/IMG-20260513-091119.png", "https://i.ibb.co/B2D1S7JP/file-00000000b0d071fdb04fb4e03f1d7105.png","https://i.ibb.co/CsD26GG1/file-0000000091ac71fdb6b262e8df965bcd.png","https://i.ibb.co/jZhbyBLs/file-00000000176471f8883b571ee068a350.png" ] },
+  { id: 19, name: "Bailpatrika", mrp:121 , price:51 , stock: "In Stock", qualities: ["🌿 Sacred", "🌿Lord Shiv","🌿 Positive"], images: ["https://i.ibb.co/twXQ5YGY/IMG-20260513-092643.png","https://i.ibb.co/WNKGg355/IMG-20260513-092511.png","https://i.ibb.co/mVgjgWqs/file-00000000ea1471f8863ae82060c7ccdd.png","https://i.ibb.co/Mypp81cs/IMG-20260513-092553.png"] },
+ 
+{ id: 4, name: "Rose", mrp: 120, price: 79, stock: "Low Stock", qualities: ["🌿 Fresh Flowers", "🌿Skin benefits", "🌿 Elegant"], colors: ["#FF0000", "#F29A9A", "#FFD9E6","#F2E8C9"], images: ["https://i.ibb.co/p6nhZ99Q/IMG-20260419-192734.jpg","https://i.ibb.co/b5nY4kb0/IMG-20260429-104311.jpg","https://i.ibb.co/gbMptNCt/IMG-20260429-105948.jpg","https://i.ibb.co/PZSR7YwN/IMG-20260429-110952-1.jpg"] }  ,
+ { id: 3, name: "Gudail", mrp: 170, price: 99, stock: "In Stock", qualities: ["🌿 Fresh Flowers", "🌿 Fast Blooming", "🌿 Fragrance"], colors: ["#FFD9E6", "#FFFFFF"],images: ["https://i.ibb.co/gLBYJxbc/IMG-20260429-114517.jpg","https://i.ibb.co/xKgM68cD/IMG-20260429-113901.jpg","https://i.ibb.co/sd5mVMzs/IMG-20260429-115113.jpg","https://i.ibb.co/8426HGkX/IMG-20260429-115156.jpg"] },
+  { id: 5, name: "Celosia (Per Piece)", mrp: 51, price: 29, stock: "In Stock", qualities: ["🌿 Brings prosperity","🌿 Velvet Fire","Flamehead"], images: ["https://i.ibb.co/Hp7y7PPd/85195.jpg","https://i.ibb.co/JRq7z0pv/85191.jpg","https://i.ibb.co/V0Bd5z1B/IMG-20260513-093134.jpg","https://i.ibb.co/Kj7YhRSD/IMG-20260513-093328.jpg"] },
+  { id: 6, name: "Guinea (Per Piece)", mrp: 50, price:29 , stock: "In Stock", qualities: ["🌿 Brings prosperity","🌿 Velvet Fire","Flamehead"], images: ["https://i.ibb.co/GvB0fs4Z/IMG-20260506-155317.jpg","https://i.ibb.co/GvL5LVPn/IMG-20260506-152229.jpg","https://i.ibb.co/dwgw0hTB/IMG-20260506-153542.jpg","https://i.ibb.co/20h4b33J/IMG-20260506-152828.jpg"] },
+  
+  { id: 7, name: " Crotun!", mrp:170, price:119 , stock: "In Stock", qualities: ["🌿 Air purifying", "🌿Architectural look","🌿 Vibrant colours"], images: ["https://i.ibb.co/9HdbqCkT/IMG-20260506-141125.jpg","https://i.ibb.co/gZvrjVfv/IMG-20260506-141327.jpg","https://i.ibb.co/Gfxhrv2W/IMG-20260506-140812.jpg","https://i.ibb.co/7dbsLnBD/IMG-20260506-141529.jpg"] },
+{ id: 8, name: "Dipun", mrp: 221, price: 149, stock: "In Stock", qualities: ["🌿 Decorative", "🌿 Attracts Birds","🌿 Aesthetic"], images: ["https://i.ibb.co/Rpbxn1qb/IMG-20260427-100628.jpg","https://i.ibb.co/xq0v2fwS/IMG-20260427-100106.jpg","https://i.ibb.co/Rpbxn1qb/IMG-20260427-100628.jpg","https://i.ibb.co/Z1GGFcSp/IMG-20260427-100457.jpg"] },
+  { id: 9, name: "Money Plant", mrp: 99, price: 49, stock: "In Stock", qualities: ["🌿 Wealth weaver", "🌿 Fast growing", "🌿 Asthetic"], images: ["https://i.ibb.co/1GkGSYC4/IMG-20260427-103702.jpg","https://i.ibb.co/nMCwkYWg/IMG20260418105231.jpg","https://i.ibb.co/fVg0T7h7/IMG-20260427-105944-1.jpg","https://i.ibb.co/nsNfGJXp/IMG-20260427-104019.jpg"] },
+  { id: 10, name: "Money Plant(Variety)", mrp: 250, price: 189, stock: "In Stock", qualities: ["🌿 Wealth weaver", "🌿 Fast growing", "🌿 Asthetic"], images: ["https://i.ibb.co/k6xHMxrG/IMG20260418110024.jpg","https://i.ibb.co/DP5b6TsX/IMG-20260430-122213.jpg","https://i.ibb.co/Zzy874wH/IMG-20260429-155022.jpg","https://i.ibb.co/k6xHMxrG/IMG20260418110024.jpg"] },
+  { id: 11, name: "Snake Plant", mrp: 151, price: 99, stock: "In Stock", qualities: ["🌿 ", "🌿Architectural look", "🌿 Long lived"], images: ["https://i.ibb.co/LXfkbCRf/8743-3.jpg","https://i.ibb.co/1JKn9Vcg/8743-2.jpg","https://i.ibb.co/MDsvBjFf/8743.jpg","https://i.ibb.co/BVg5sFmk/8743-1.jpg"] },
+  { id: 12, name: "Crotun", mrp: 219, price: 149, stock: "In Stock", qualities: ["🌿 Air purifying", "🌿Architectural look","🌿 Vibrant colours"], images: ["https://i.ibb.co/4w5LH8NF/IMG-20260427-112911-1.jpg","https://i.ibb.co/k660v4tg/IMG-20260427-113023-1.jpg","https://i.ibb.co/qFRfSpnr/IMG20260418105359.jpg","https://i.ibb.co/N2QrFKBP/IMG20260418105354-1.jpg"] },
+  
+ { id: 13, name: "Naubujia", mrp: 60, price: 29, stock: "In Stock", qualities: ["🌿 Beautiful Flowers", "🌿 Ayurvedic Uses","🌿 Evergreen Shrub"], images: ["https://i.ibb.co/LDxsVYfs/IMG-20260507-091927-1.jpg","https://i.ibb.co/wrC0tqxF/IMG-20260507-091125-1.jpg","https://i.ibb.co/Z050tWf/IMG-20260507-091902-1.jpg","https://i.ibb.co/F455t8bj/IMG-20260507-091356-1.jpg"] },
+  
+  { id: 14, name: "Sadhabahar(per plant)", mrp: 82, price: 29, stock: "In Stock", qualities: ["🌿 Beautiful Flowers", "🌿 Ayurvedic Uses","🌿 Evergreen Shrub"], images: ["https://i.ibb.co/7t0BcCs8/IMG-20260427-124550.jpg","https://i.ibb.co/ccFMDq9w/IMG-20260427-125531.jpg","https://i.ibb.co/5gRJWd11/IMG-20260427-125711.jpg","https://i.ibb.co/gbdt3q23/IMG-20260427-125327.jpg"] },
+  { id: 13, name: "Chadni", mrp: 139, price: 79, stock: "In Stock", qualities: ["🌿 Beautiful Flowers", "🌿 Ayurvedic Uses","🌿 Evergreen Shrub"], images: ["https://i.ibb.co/B9NtMzs/IMG-20260427-121902.png","https://i.ibb.co/G4hpjcTy/IMG-20260427-122834.jpg","https://i.ibb.co/YBjZWJvZ/IMG-20260427-122732.png","https://i.ibb.co/ZpxwSPhq/IMG-20260427-122816.jpg"] },
+  { id: 1, name: "Ixora Plant", mrp: 150, price: 119, stock: "In Stock", qualities: ["🌿 Mature Colour", "🌿 Easy Care", "🌿 Decorative"], images: ["https://i.ibb.co/G3xVrHMt/84732.jpg", "https://i.ibb.co/53Bfyw1/85151.jpg", "https://i.ibb.co/zHFg9TDq/85153.jpg", "https://i.ibb.co/G3xVrHMt/84732.jpg"] },
+  { id: 25, name: "Kanher", mrp:60 , price:29 , stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/SD6zCcMN/file-000000004f50720b912c2ad7c93f2789.png","https://i.ibb.co/Y4WmZhpd/IMG-20260507-095609.png","https://i.ibb.co/SD6zCcMN/file-000000004f50720b912c2ad7c93f2789.png","https://i.ibb.co/yn6qzktJ/file-00000000d23c720b84da9555754c57d5.png"] },
+  { id: 25, name: "Ginea", mrp:60 , price:29 , stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/0jDbN7SM/IMG-20260510-102030.jpg","https://i.ibb.co/d0s5kBgN/IMG-20260510-103402.jpg","https://i.ibb.co/Xv8DWwK/IMG-20260510-103023.jpg","https://i.ibb.co/xv3TtGy/IMG-20260510-103423.jpg"] },
+  { id: 25, name: "Allamanda", mrp:150 , price:79, stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/HDyF4DYD/IMG-20260507-102346.png","https://i.ibb.co/jk65ZvGQ/IMG-20260507-101843.jpg","https://i.ibb.co/nq0qD7s7/IMG-20260507-102324.jpg","https://i.ibb.co/JJyY60N/IMG-20260507-102212.jpg"] },
+  { id: 25, name: "Madhukamini", mrp:150 , price:99, stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/n8qvcjHy/IMG-20260510-121556.jpg","https://i.ibb.co/0WP3Nqj/IMG-20260510-122553.jpg","https://i.ibb.co/JwpMzhM2/IMG-20260510-120535.jpg","https://i.ibb.co/gZBkPvtn/IMG-20260510-122008.jpg"] },
+  { id: 15, name: "Nicotia", mrp: 200, price: 149, stock: "In Stock", qualities: ["🌿 Good Fortune", "🌿 Decorative","🌿 Attractive"], images: ["https://i.ibb.co/pjLsN0bh/IMG-20260511-104407.jpg","https://i.ibb.co/svfJyJbZ/IMG-20260511-105159.jpg","https://i.ibb.co/chXFpWZw/IMG-20260511-104219.jpg","https://i.ibb.co/rRQ3RyMY/IMG-20260511-104622.jpg"] },
+
+  { id: 15, name: "Golden cyparus", mrp: 200, price: 149, stock: "In Stock", qualities: ["🌿 Good Fortune", "🌿 Decorative","🌿 Attractive"], images: ["https://i.ibb.co/pBVpz2Qn/file-00000000c20072079f5324a19338a0da.png","https://i.ibb.co/JwRRwYVg/IMG-20260511-105444.jpg","https://i.ibb.co/FLWrD8dd/IMG-20260511-105604.jpg","https://i.ibb.co/p6c4FpKn/IMG-20260511-105733.jpg"] },
+  { id: 15, name: "Lilly", mrp: 200, price: 149, stock: "In Stock", qualities: ["🌿 Good Fortune", "🌿 Decorative","🌿 Attractive"], images: ["https://i.ibb.co/jkXd88gY/IMG-20260513-102523.png","https://i.ibb.co/DPMsz5JX/IMG-20260513-102635.png","https://i.ibb.co/1tF937BX/IMG-20260513-102407.png","https://i.ibb.co/VXwrTzC/IMG-20260513-102727.png"]},
+  { id: 15, name: "Golden cyparus!", mrp: 200, price: 149, stock: "In Stock", qualities: ["🌿 Good Fortune", "🌿 Decorative","🌿 Attractive"], images: ["https://i.ibb.co/PvD0RzYW/IMG-20260511-110857.jpg","https://i.ibb.co/zHRTTDSq/90547.jpg","https://i.ibb.co/84m25X05/90545.jpg","https://i.ibb.co/fRW3ZpC/IMG-20260511-111249.jpg"] },
+  { id: 15, name: "Lucky bamboo", mrp: 301, price: 199, stock: "In Stock", qualities: ["🌿 Good Fortune", "🌿 Decorative","🌿 Attractive"], images: ["https://i.ibb.co/Qjtwkrmw/8760.jpg","https://i.ibb.co/nqKBCS0J/8760-1.jpg","https://i.ibb.co/1fnF5rVY/8761-1.jpg","https://i.ibb.co/1fBJZY87/8760-2.jpg"] },
+  { id: 16, name: "Black berry", mrp: 350, price: 249, stock: "In Stock", qualities: ["🌿 Delicious", "🌿 Nutrients Rich","🌿Fast Growing"], images: ["https://i.ibb.co/8n9DH70x/8764.jpg","https://i.ibb.co/ymbgjMbh/87634.jpg","https://i.ibb.co/r2h6snBJ/8763-1.jpg","https://i.ibb.co/p6mg4jk5/8763.jpg"] },
+  { id: 17, name: "Pan", mrp: 200, price: 119,stock: "In Stock", qualities: ["🌿 Sacred", "🌿 Medicinal","🌿 Economic vale"], images: ["https://i.ibb.co/Q3MGJY0m/IMG-20260428-155028.jpg","https://i.ibb.co/WWv5Jgwm/IMG-20260428-155451.jpg","https://i.ibb.co/QvB0dXzj/IMG-20260428-155633.jpg","https://i.ibb.co/wh5zncKC/IMG-20260428-155332.jpg"] },
+  { id: 18, name: "Rudraksh", mrp: 449, price:389 , stock: "In Stock", qualities: ["🌿 Sacred", "🌿BP Control","🌿Positive"], images: ["https://i.ibb.co/fdH64FqN/IMG-20260428-172948.jpg","https://i.ibb.co/ycrkmVtQ/IMG-20260428-173657.jpg","https://i.ibb.co/BHNTFLPP/IMG-20260428-174135.jpg","https://i.ibb.co/FQT7vNY/IMG-20260428-173333.jpg"] },
+
+
+  { id: 20, name: "Touch Me Not/Chuimui", mrp:80 , price:39 , stock: "In Stock", qualities: ["🌿 Touch sensitive", "🌿Easy to grow","🌿 Fun to play with"], images: ["https://i.ibb.co/5X5H3WT3/IMG-20260429-140744.jpg","https://i.ibb.co/ycLyWtdZ/IMG-20260429-140559.jpg","https://i.ibb.co/zTjmwS4v/IMG-20260429-140939.jpg","https://i.ibb.co/8DnyZTqg/IMG-20260429-140040.jpg"] },
+  { id: 21, name: "Kadhipatta", mrp:80 , price:39 , stock: "In Stock", qualities: ["🌿Cooking", "🌿 Flavourfull","🌿Easy to grow "], images: ["https://i.ibb.co/h1JzDHmM/IMG-20260429-141757.jpg","https://i.ibb.co/ZzpJcFwq/IMG-20260429-142850.jpg","https://i.ibb.co/bMvX7Yjf/IMG-20260429-142333.jpg","https://i.ibb.co/HLTh22J4/IMG-20260429-142221.jpg"] },
+  { id: 22, name: "Gandhraj", mrp:150 , price:99 , stock: "In Stock", qualities: ["🌿 Stress therapy", "🌿 Fragrance","🌿 Beautiful Flowers"], images: ["https://i.ibb.co/21p5WSGv/IMG-20260429-145305.jpg","https://i.ibb.co/tMNKqVzr/IMG-20260429-144653.jpg","https://i.ibb.co/Mkn0s65Z/IMG-20260429-145037.jpg","https://i.ibb.co/SXyrYq9s/IMG-20260429-145438.jpg"] },
+  { id: 23, name: "Bougainvillea", mrp:250 , price:179 , stock: "In Stock", qualities: ["🌿 Fast growing", "🌿 Beautiful Flowers","🌿 Wound healing"], images: ["https://i.ibb.co/h1F8DnVt/IMG20260418104808.jpg","https://i.ibb.co/V0RwPRxZ/IMG20260418104822.jpg","https://i.ibb.co/h1F8DnVt/IMG20260418104808.jpg","https://i.ibb.co/V0RwPRxZ/IMG20260418104822.jpg"] },
+  { id: 24, name: "Bougainvillea!", mrp:250 , price:179 , stock: "In Stock", qualities: ["🌿 Fast growing", "🌿 Beautiful Flowers","🌿 Wound healing"], images: ["https://i.ibb.co/v6h2px5H/IMG-20260506-135336.jpg","https://i.ibb.co/jvzwJZbH/IMG-20260506-133958.jpg","https://i.ibb.co/1SL9B0h/IMG-20260506-134444.jpg","https://i.ibb.co/C3S6VTW6/IMG-20260506-135239.jpg"] },
+
+  
+  
+  { id: 25, name: "Dragon Fruit Plant", mrp:150 , price:79 , stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/wrxbGqyQ/IMG-20260430-124618.jpg","https://i.ibb.co/JWc70HCt/IMG-20260430-124440.jpg","https://i.ibb.co/cS0Qmkcb/IMG-20260430-125411.png","https://i.ibb.co/k2rKT8BF/IMG-20260430-124019.jpg"] },
+  { id: 25, name: "Grapes", mrp:80, price:49 , stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/BVkDD77q/IMG-20260507-114046.png","https://i.ibb.co/LXRkYjkJ/IMG-20260507-113542.jpg","https://i.ibb.co/XrQ3w0TT/IMG-20260507-114102.png","https://i.ibb.co/zHNcT4hw/IMG-20260507-113249.jpg"] },
+  { id: 25, name: "Banana", mrp:80, price:49 , stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/pBFM4wvy/IMG-20260507-133346.jpg","https://i.ibb.co/gb1rbN66/IMG-20260507-133244.jpg","https://i.ibb.co/k6HpwzYF/IMG-20260507-133439.jpg","https://i.ibb.co/sJPFFZBw/IMG-20260507-133548.jpg"] },
+  { id: 25, name: "Papaya", mrp:120, price:69 , stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/spgKmNBZ/IMG-20260507-111511.jpg","https://i.ibb.co/TMwFBn08/IMG-20260507-112149.jpg","https://i.ibb.co/n8rprKcs/IMG-20260507-111915.jpg","https://i.ibb.co/21SMvQXb/IMG-20260507-112418.jpg"] },
+ 
+ 
+  { id: 25, name: "Guava(pink) ", mrp:120 , price:79 , stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/TMv9NWZN/IMG-20260507-110034.jpg","https://i.ibb.co/MxND2DZc/IMG-20260507-110716.jpg","https://i.ibb.co/cSvHMvzg/IMG-20260507-110431.jpg","https://i.ibb.co/gLQFPnJb/IMG-20260507-110215.jpg"] },
+  
+  { id: 25, name: "Orange ", mrp:180, price:129, stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/h1tHbwGz/file-00000000860c722fa07014029ffa2914.png","https://i.ibb.co/gK2J8Lr/1778138898841.png","https://i.ibb.co/tTx2x77g/IMG-20260507-130223.jpg","https://i.ibb.co/Xf3115Zk/IMG-20260507-130255.png"] },
+{ id: 25, name: "Lemon ", mrp:
+200, price:149, stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/DfTcN2SN/file-00000000633c720ba78f4db4e07912dd.png","https://i.ibb.co/3Q0rrXZ/IMG-20260510-124115.jpg","https://i.ibb.co/Kj9Fmd1j/file-000000002418720b8f65f1dc742f2a57.png","https://i.ibb.co/rfRvHSD2/IMG-20260510-124131.jpg"] },
+
+  { id: 25, name: "Aam Variety ", mrp:300 , price:199 , stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/sk9z5Hs/IMG-20260507-104919.jpg","https://i.ibb.co/v4TYPNb8/IMG-20260507-105157.jpg","https://i.ibb.co/xt6bdBTP/IMG-20260507-104854.jpg","https://i.ibb.co/mVXYmqRw/IMG-20260507-104158.jpg"] },
+  { id: 25, name: "Litchi ", mrp: 280, price:219 , stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/JRDZBxZ5/IMG-20260508-100432.png","https://i.ibb.co/pjD0mMkk/IMG-20260508-100506.png","https://i.ibb.co/cSpF4R4S/IMG-20260508-100415.png","https://i.ibb.co/Vcz6dPFY/IMG-20260508-100347.png"] },
+
+  { id: 25, name: "Chiku ", mrp:300 , price:249 , stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/4nYpTzL5/IMG-20260507-131308.jpg","https://i.ibb.co/qYjnzWgf/IMG-20260507-132421.jpg","https://i.ibb.co/qYMjhr4k/IMG-20260507-132509.jpg","https://i.ibb.co/PGHH7gVS/IMG-20260507-132247.jpg"] },
+  { id: 25, name: "Z Plant", mrp:100 , price:49 , stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/MxfPt3cF/IMG-20260513-095249.jpg","https://i.ibb.co/5hCnHhR0/IMG-20260513-095012.jpg","https://i.ibb.co/L4ttSJx/IMG-20260513-094729.jpg","https://i.ibb.co/GvRJs9cv/IMG20260510172801.jpg"] },
+  { id: 25, name: "Morphankhi ", mrp:150 , price:79 , stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/mCdyFgw7/IMG-20260508-104546.jpg","https://i.ibb.co/7dqwB508/IMG-20260508-104418.jpg","https://i.ibb.co/XxVfbjxj/IMG-20260508-104814.jpg","https://i.ibb.co/p6YmW0Sx/IMG-20260508-105602.png"] },
+  { id: 25, name: "Aerocaria ", mrp:250 , price:199 , stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/Xfqrmds6/IMG-20260508-102135.jpg","https://i.ibb.co/r26BnHjD/IMG-20260508-101318.jpg","https://i.ibb.co/MkJZX8Hs/IMG-20260508-101457.jpg","https://i.ibb.co/wFPrmW6K/84281.jpg"] },
+
+{ id: 25, name: "Rubber plant ", mrp:230 , price:169 , stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/nqmcsX77/IMG-20260513-100747.png","https://i.ibb.co/pBMLYRqY/IMG-20260513-100216.jpg","https://i.ibb.co/4g8sf2C5/IMG-20260513-100056.jpg","https://i.ibb.co/601DvYG4/IMG-20260510-100935.jpg"] },
+
+{ id: 25, name: " Dragon plant", mrp:280 , price:239 , stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/FLcnQnCG/file-000000003d6871f89b43b1b7e6f7288e.png","https://i.ibb.co/sdJZ8sX3/file-000000008f84720b9b8f11e8be2f9ede.png","https://i.ibb.co/PGHHQxdT/IMG-20260510-120640.png","https://i.ibb.co/1fw74wTW/file-00000000fa1071f8abc5dba878f73aa2.png"] },
+{ id: 25, name: "Tapori palm tree", mrp:1200 , price:999 , stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/9m4Dp20p/file-0000000042dc71f8ab05f364f8fe7611.png","https://i.ibb.co/k6kG0bFX/IMG-20260510-112718.jpg","https://i.ibb.co/sv38zWPB/IMG-20260510-112331.jpg","https://i.ibb.co/tpZ4XfmR/IMG-20260510-111801.jpg"] },
+{ id: 25, name: "Cyanus palm tree", mrp:1300 , price:1199 , stock: "In Stock", qualities: ["🌿 Night Bloomer", "🌿 Fast growing","🌿 Long Lived"], images: ["https://i.ibb.co/v6yngMJC/file-00000000933c71faa67fb4abf8ef5658.png","https://i.ibb.co/nsvpMb2y/IMG-20260510-130804.png","https://i.ibb.co/zh1Pp0R5/IMG-20260510-125242.jpg","https://i.ibb.co/Fk0xwQ3R/IMG-20260510-130909.jpg"] },
+];
+
+const soils = [
+  { id: 101, name: "Premium Mix 5kg", mrp: 399, price: 299, stock: "In Stock", qualities: ["🌿 Ready to use", "🌿 Nutrient rich"], images: ["https://via.placeholder.com/300x200?text=Soil+Mix"] },
+  { id: 102, name: "Vermicompost 2kg", mrp: 249, price: 199, stock: "In Stock", qualities: ["🌿 Organic", "🌿 Boosts growth"], images: ["https://via.placeholder.com/300x200?text=Vermicompost"] }
+];
+
+const fertilizers = [
+  { id: 201, name: "NPK 500gm", mrp: 199, price: 149, stock: "In Stock", qualities: ["🌿 All-purpose", "🌿 Quick results"], images: ["https://via.placeholder.com/300x200?text=NPK"] },
+  { id: 202, name: "Seaweed Extract", mrp: 299, price: 249, stock: "In Stock", qualities: ["🌿 Natural", "🌿 Stress reducer"], images: ["https://via.placeholder.com/300x200?text=Seaweed"] }
+];
+
+const pots = [
+  { id: 301, name: " ", mrp: 99, price: 79, stock: "In Stock", qualities: ["🏺 Traditional", "🌱 Breathable"], images: ["https://via.placeholder.com/300x200?text=Clay+Pot"] },
+  { id: 302, name: "", mrp: 149, price: 119, stock: "In Stock", qualities: ["🏺 Lightweight", "💧 Drainage hole"], images: ["https://via.placeholder.com/300x200?text=Plastic+Pot"] },
+
+  { id: 304, name: "Cement Pot", mrp: 200, price: 149, stock: "Low Stock", qualities: ["🏺 14 inch","🏺 Garden essential","🏺 Decorative"], images: ["https://i.ibb.co/ycHnKtNr/IMG-20260511-172804.png","https://i.ibb.co/KZ1y2nC/file-0000000063b0720ba166731a8d32bdad.png","https://i.ibb.co/8gyfpxvc/IMG-20260511-172753.png","https://i.ibb.co/gLv3jZD2/IMG-20260511-172852.png"] },
+  { id: 304, name: "Plastic Pot 1", mrp: 250, price: 199, stock: "Low Stock", qualities: ["🏺 16 inch","🏺 Garden essential","🏺 Decorative"], images: ["https://i.ibb.co/cScVtRWt/file-00000000eb1472078bd260a6cd18c231.png","https://i.ibb.co/ccbj5YHy/IMG-20260513-104612.png","https://i.ibb.co/Wptgt78X/file-00000000f1d07207933134ee9320676e.png","https://i.ibb.co/zhYgNMgf/file-0000000037a0720786e761eaf3411aef.png"] },
+  { id: 304, name: "Plastic Pot 1", mrp: 300, price: 249, stock: "Low Stock", qualities: ["🏺 16 inch","🏺 Garden essential","🏺 Decorative"], images: ["https://i.ibb.co/HTCgGC5c/IMG-20260513-105232.png","https://i.ibb.co/Ps1sGnL2/IMG-20260513-110354.png","https://i.ibb.co/W42Sp11Y/IMG-20260513-105154.png","https://i.ibb.co/bgxWXLBj/file-00000000e83871fabaace45a0dbcf3e3.png"] },
+  { id: 304, name: " Plastic Pot", mrp: 400, price: 299, stock: "Low Stock", qualities: ["🏺 19 inch","🏺 Garden essential","🏺 Decorative"], images: ["https://i.ibb.co/N6pRgRb9/IMG-20260513-111931.png","https://i.ibb.co/XxHdYVn3/IMG-20260513-111913.png","https://i.ibb.co/prwhzyNj/IMG-20260513-111950.png","https://i.ibb.co/HfQDWDC4/IMG-20260511-175912.jpg"] },
+  { id: 304, name: " Plastic Pot", mrp: 400, price: 299, stock: "Low Stock", qualities: ["🏺 19 inch","🏺 Garden essential","🏺 Decorative"], images: ["https://i.ibb.co/ycwRRXLs/IMG-20260511-174140.png","https://i.ibb.co/nMDpRDBN/IMG-20260511-174234.png","https://i.ibb.co/pvTBqy4w/IMG-20260511-174156.png","https://i.ibb.co/HpnK9DJP/file-00000000ccb871f8b335ecb2b1dde01a.png"] },
+];
+
+function showToast(message) {
+  const toast = document.getElementById('toast');
+  toast.textContent = message;
+  toast.classList.add('show');
+  setTimeout(() => {
+    toast.classList.remove('show');
+  }, 2000);
+}
+
+function renderProducts(products, containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  container.innerHTML = products.map(p => `
+    <div class="product-card" onclick='openImagePopup(${JSON.stringify(p)})'>
+      <img class="product-img" src="${p.images ? p.images[0] : ''}" alt="${p.name}" loading="lazy">
+      ${p.images && p.images.length > 1 ? `
+      <div class="image-dots">
+        ${p.images.map((_, idx) => `<div class="dot ${idx === 0 ? 'active' : ''}"></div>`).join('')}
+      </div>
+      ` : ''}
+      <div class="product-name">
+  ${p.name}
+  ${p.colors ? p.colors.map(c => `<span style="display: inline-block; width: 16px; height: 16px; background: ${c}; border-radius: 50%; margin-left: 6px; border: 1px solid #999; vertical-align: middle;"></span>`).join('') : ''}
+</div>
+      <div class="price">
+        <span class="mrp">₹${p.mrp}</span>
+        <span class="sale-price">₹${p.price}</span>
+      </div>
+      <div class="quality-tags">
+        ${(p.qualities || []).map(q => `<span class="quality-tag">${q}</span>`).join('')}
+      </div>
+      <div class="stock"><span class="in-stock">${p.stock}</span></div>
+      <div class="product-actions">
+        <button class="action-btn add-to-cart-btn" onclick="event.stopPropagation(); addToCart(${p.id}, '${p.name}', ${p.price}, ${p.mrp}, '${p.images ? p.images[0] : ''}')">🛒 Add to Cart</button>
+        <button class="action-btn wishlist-product-btn" onclick="event.stopPropagation(); addToWishlist(${p.id}, '${p.name}', ${p.price})">🤍 Wishlist</button>
+      </div>
+    </div>
+  `).join('');
+}
+renderProducts(plants, 'plantsGrid');
+renderProducts(soils, 'soilGrid');
+renderProducts(fertilizers, 'fertilizerGrid');
+renderProducts(pots, 'potsGrid');
+
+// Search
+document.getElementById('searchInput').addEventListener('input', (e) => {
+  const query = e.target.value.toLowerCase();
+  const filtered = plants.filter(p => p.name.toLowerCase().includes(query));
+  renderProducts(filtered, 'plantsGrid');
+});
+
+document.getElementById('whatsappBtn').onclick = () => window.open('https://wa.me/919058960992?text=Hi%2C%20I%20want%20to%20order%20plants', '_blank');
+
+// Breadcrumb
+document.getElementById('breadcrumbHome').onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+document.getElementById('breadcrumbPlants').onclick = () => document.getElementById('plantsSection').scrollIntoView({ behavior: 'smooth' });
+document.getElementById('breadcrumbSoil').onclick = () => document.getElementById('soilSection').scrollIntoView({ behavior: 'smooth' });
+document.getElementById('breadcrumbFertilizers').onclick = () => document.getElementById('fertilizerSection').scrollIntoView({ behavior: 'smooth' });
+document.getElementById('breadcrumbPots').onclick = () => document.getElementById('potsSection').scrollIntoView({ behavior: 'smooth' });
+
+// Side Menu
+const menuBtn = document.getElementById('menuBtn');
+const sideMenu = document.getElementById('sideMenu');
+const closeMenuBtn = document.getElementById('closeMenuBtn');
+if (menuBtn) menuBtn.onclick = () => sideMenu.classList.add('open');
+if (closeMenuBtn) closeMenuBtn.onclick = () => sideMenu.classList.remove('open');
+window.onclick = (e) => { if (e.target === sideMenu) sideMenu.classList.remove('open'); };
+
+document.querySelectorAll('.menu-item[data-section]').forEach(link => {
+  link.onclick = (e) => {
+    e.preventDefault();
+    const section = link.dataset.section;
+    if (section === 'home') window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (section === 'plants') document.getElementById('plantsSection')?.scrollIntoView({ behavior: 'smooth' });
+    if (section === 'soil') document.getElementById('soilSection')?.scrollIntoView({ behavior: 'smooth' });
+    if (section === 'fertilizers') document.getElementById('fertilizerSection')?.scrollIntoView({ behavior: 'smooth' });
+    if (section === 'pots') document.getElementById('potsSection')?.scrollIntoView({ behavior: 'smooth' });
+    sideMenu.classList.remove('open');
+  };
+});
+
+document.getElementById('instagramMenuItem').onclick = () => {
+  window.open('https://www.instagram.com/podha_shikohabad', '_blank');
+  sideMenu.classList.remove('open');
+};
+
+// Popups
+function openOffersPopup() {
+  document.getElementById('offersPopup').style.display = 'flex';
+}
+function closeOffersPopup() {
+  document.getElementById('offersPopup').style.display = 'none';
+}
+document.getElementById('offersMenuItem').onclick = () => {
+  openOffersPopup();
+  sideMenu.classList.remove('open');
+};
+
+function openAboutPopup() {
+  document.getElementById('aboutPopup').style.display = 'flex';
+}
+function closeAboutPopup() {
+  document.getElementById('aboutPopup').style.display = 'none';
+}
+document.getElementById('aboutUsMenuItem').onclick = () => {
+  openAboutPopup();
+  sideMenu.classList.remove('open');
+};
+
+function openRefundPopup() {
+  document.getElementById('refundPopup').style.display = 'flex';
+}
+function closeRefundPopup() {
+  document.getElementById('refundPopup').style.display = 'none';
+}
+document.getElementById('refundMenuItem').onclick = () => {
+  openRefundPopup();
+  sideMenu.classList.remove('open');
+};
+
+if (document.getElementById('menuWhatsapp')) document.getElementById('menuWhatsapp').onclick = () => window.open('https://wa.me/919058960992', '_blank');
+if (document.getElementById('menuLocation')) document.getElementById('menuLocation').onclick = () => alert('📍 Delivery within 6-7 km of Shikohabad');
+if (document.getElementById('menuShare')) {
+  document.getElementById('menuShare').onclick = () => {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Podha',
+        url: window.location.href
+      });
+    } else {
+      alert('Share not supported on this browser. Copy this link: ' + window.location.href);
+    }
+  };
+}
+
+// Back to top
+window.onscroll = () => { const btn = document.getElementById('backToTopBtn'); if (btn) btn.style.display = window.scrollY > 300 ? 'flex' : 'none'; };
+document.getElementById('backToTopBtn').onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+// Image Popup
+window.openImagePopup = function(product) {
+  currentImages = product.images || [product.img];
+  currentIndex = 0;
+  document.getElementById('modalMainImage').src = currentImages[0];
+  document.getElementById('modalPlantName').innerText = product.name;
+  document.getElementById('modalSalePrice').innerHTML = `₹${product.price}`;
+  document.getElementById('modalMrpPrice').innerHTML = `₹${product.mrp}`;
+  let savePercent = Math.round(((product.mrp - product.price) / product.mrp) * 100);
+  document.getElementById('modalSaveBadge').innerHTML = `🔥 Save ${savePercent}%`;
+  document.getElementById('modalStock').innerHTML = product.stock === 'In Stock' ? '✅ In Stock' : '⚠️ Low Stock';
+  document.getElementById('modalBenefits').innerHTML = (product.qualities || []).map(q => `<div class="benefit-item">${q}</div>`).join('');
+  let thumbContainer = document.getElementById('thumbnailContainer');
+  thumbContainer.innerHTML = currentImages.map((img, idx) => `<img src="${img}" class="thumbnail ${idx === 0 ? 'active' : ''}" data-index="${idx}">`).join('');
+  document.querySelectorAll('.thumbnail').forEach(thumb => {
+    thumb.onclick = () => { currentIndex = parseInt(thumb.dataset.index); updateModalImage(); };
+  });
+  document.getElementById('imageModal').style.display = 'flex';
+};
+
+function updateModalImage() {
+  document.getElementById('modalMainImage').src = currentImages[currentIndex];
+  document.querySelectorAll('.thumbnail').forEach((thumb, idx) => {
+    if (idx === currentIndex) thumb.classList.add('active');
+    else thumb.classList.remove('active');
+  });
+}
+
+document.getElementById('closeModalBtn').onclick = () => document.getElementById('imageModal').style.display = 'none';
+document.getElementById('imageModal').onclick = (e) => { if (e.target === document.getElementById('imageModal')) document.getElementById('imageModal').style.display = 'none'; };
+
+// Swipe
+const swipeElement = document.getElementById('modalMainImage');
+let swipeStartX = 0, swipeEndX = 0;
+if (swipeElement) {
+  swipeElement.addEventListener('touchstart', (e) => { swipeStartX = e.changedTouches[0].screenX; });
+  swipeElement.addEventListener('touchend', (e) => {
+    swipeEndX = e.changedTouches[0].screenX;
+    const diff = swipeEndX - swipeStartX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) { if (currentIndex > 0) { currentIndex--; updateModalImage(); } }
+      else { if (currentIndex < currentImages.length - 1) { currentIndex++; updateModalImage(); } }
+    }
+  });
+}
+// Sort
+const sortSelect = document.getElementById('sortPlants');
+
+function sortPlantsByPrice(order) {
+  let sortedPlants = [...plants];
+  if (order === 'price-low-high') {
+    sortedPlants.sort((a, b) => a.price - b.price);
+  } else if (order === 'price-high-low') {
+    sortedPlants.sort((a, b) => b.price - a.price);
+  } else if (order === 'discount-high-low') {
+    sortedPlants.sort((a, b) => {
+      const discountA = ((a.mrp - a.price) / a.mrp) * 100;
+      const discountB = ((b.mrp - b.price) / b.mrp) * 100;
+      return discountB - discountA;
+    });
+  } else if (order === 'stock-low-high') {
+    const stockOrder = { "In Stock": 1, "Low Stock": 2, "Out of Stock": 3 };
+    sortedPlants.sort((a, b) => stockOrder[a.stock] - stockOrder[b.stock]);
+  } else {
+    sortedPlants = [...plants];
+  }
+  renderProducts(sortedPlants, 'plantsGrid');
+}
+if (sortSelect) {
+  sortSelect.addEventListener('change', (e) => {
+    sortPlantsByPrice(e.target.value);
+  });
+}
+
+// ========== CART & WISHLIST ==========
+let cart = JSON.parse(localStorage.getItem('podha_cart')) || [];
+let wishlist = JSON.parse(localStorage.getItem('podha_wishlist')) || [];
+
+function saveCart() {
+  localStorage.setItem('podha_cart', JSON.stringify(cart));
+  updateCartCount();
+}
+
+function updateCartCount() {
+  const count = cart.reduce((total, item) => total + item.quantity, 0);
+  const cartCountSpan = document.getElementById('cartCount');
+  if (cartCountSpan) cartCountSpan.innerText = count;
+}
+
+function addToCart(id, name, price, mrp, image) {
+  const existing = cart.find(item => item.id === id);
+  if (existing) {
+    existing.quantity++;
+  } else {
+    cart.push({ id, name, price, mrp, image, quantity: 1 });
+  }
+  saveCart();
+  displayCartSidebarItems();
+  updateCartCount();
+  showToast(`${name} added to cart!`);
+}
+
+function updateCartQuantity(id, newQuantity) {
+  if (newQuantity <= 0) {
+    removeFromCartSidebar(id);
+    return;
+  }
+  const item = cart.find(i => i.id === id);
+  if (item) {
+    item.quantity = newQuantity;
+    saveCart();
+    displayCartSidebarItems();
+    updateCartCount();
+  }
+}
+
+function removeFromCartSidebar(id) {
+  cart = cart.filter(item => item.id !== id);
+  saveCart();
+  displayCartSidebarItems();
+  updateCartCount();
+}
+
+function displayCartSidebarItems() {
+  const container = document.getElementById('cartSidebarItems');
+  const totalsContainer = document.getElementById('cartTotalsContainer');
+  const itemCountSpan = document.getElementById('cartItemCount');
+  const youMayLikeWrapper = document.getElementById('youMayLikeWrapper');
+  const couponSection = document.querySelector('.cart-scrollable .coupon-section');
+  const discountBadge = document.querySelector('.cart-scrollable .discount-badge-cart');
+  
+  console.log("Cart items:", cart); // Debug: Check if cart has items
+  
+  if (!cart || cart.length === 0) {
+    container.innerHTML = '<p style="text-align: center; color: #666; padding: 20px;">Your cart is empty</p>';
+    totalsContainer.innerHTML = '';
+    itemCountSpan.innerText = '0';
+    if (youMayLikeWrapper) youMayLikeWrapper.style.display = 'none';
+    if (couponSection) couponSection.style.display = 'none';
+    if (discountBadge) discountBadge.style.display = 'none';
+    return;
+  }
+  
+  if (youMayLikeWrapper) youMayLikeWrapper.style.display = '';
+  if (couponSection) couponSection.style.display = '';
+  if (discountBadge) discountBadge.style.display = '';
+  
+  let itemCount = 0;
+  
+  // Display cart items
+  container.innerHTML = cart.map(item => {
+    itemCount += item.quantity;
+    const discountPercent = Math.round(((item.mrp - item.price) / item.mrp) * 100);
+    return `
+      <div class="cart-item">
+        <img class="cart-item-image" src="${item.image || 'https://via.placeholder.com/70'}" alt="${item.name}">
+        <div class="cart-item-details">
+          <div class="cart-item-name">${item.name}</div>
+          <div class="cart-item-price">
+            <span class="cart-item-mrp">₹${item.mrp}</span>
+            <span class="cart-item-sale"> ₹${item.price}</span>
+            <span class="cart-item-discount">🔥 ${discountPercent}% OFF</span>
+          </div>
+          <div class="cart-item-actions">
+            <button class="quantity-btn" onclick="updateCartQuantity(${item.id}, ${item.quantity - 1})">-</button>
+            <span class="quantity-value">${item.quantity}</span>
+            <button class="quantity-btn" onclick="updateCartQuantity(${item.id}, ${item.quantity + 1})">+</button>
+            <button class="remove-item" onclick="removeFromCartSidebar(${item.id})">Remove</button>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+  // Calculate totals
+  const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+  const deliveryFee = subtotal < 199 ? 29 : 0;
+  const total = subtotal + deliveryFee;
+  const savings = cart.reduce((sum, item) => sum + ((item.mrp - item.price) * item.quantity), 0);
+  
+  itemCountSpan.innerText = itemCount;
+  
+  totalsContainer.innerHTML = `
+    <div style="margin-bottom: 15px;">
+      <div class="delivery-fee-line">
+        <span>Item Total</span>
+        <span>₹${subtotal}</span>
+      </div>
+      <div class="delivery-fee-line">
+        <span>Delivery Fee</span>
+        <span>${deliveryFee === 0 ? '<span class="free-delivery">₹29</span> FREE' : `₹${deliveryFee}`}</span>
+      </div>
+      ${deliveryFee === 0 ? '<div class="savings">✅ Free delivery applied (above ₹199)</div>' : '<div class="savings">🚚 Free delivery above ₹199</div>'}
+      <div class="delivery-fee-line" style="font-weight: bold; font-size: 16px; margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee;">
+        <span>Total Payable</span>
+        <span>₹${total}</span>
+      </div>
+      <div class="savings" style="color: #2e7d32;">
+        💬 You saved ₹${savings} today!
+      </div>
+    </div>
+  `;
+  
+  // You may also like section
+  const likeContainer = document.getElementById('youMayLike');
+  if (likeContainer) {
+    const randomPlants = [...plants].sort(() => 0.5 - Math.random()).slice(0, 3);
+    likeContainer.innerHTML = randomPlants.map(p => `
+      <div class="like-item" onclick="addToCart(${p.id}, '${p.name}', ${p.price}, ${p.mrp}, '${p.images ? p.images[0] : ''}'); closeCartSidebar();">
+        <img src="${p.images ? p.images[0] : ''}" alt="${p.name}">
+        <div class="like-item-name">${p.name}</div>
+        <div class="like-item-price">₹${p.price}</div>
+      </div>
+    `).join('');
+  }
+}
+
+function openCartSidebar() {
+  displayCartSidebarItems();
+  document.getElementById('cartSidebar').classList.add('open');
+}
+
+function closeCartSidebar() {
+  document.getElementById('cartSidebar').classList.remove('open');
+}
+
+document.getElementById('cartIconBtn').onclick = openCartSidebar;
+document.getElementById('closeCartBtn').onclick = closeCartSidebar;
+
+// Checkout
+document.getElementById('cartCheckoutBtn').onclick = () => {
+  if (!cart || cart.length === 0) {
+    showToast('Your cart is empty');
+    return;
+  }
+  const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+  const deliveryFee = subtotal < 199 ? 29 : 0;
+  const total = subtotal + deliveryFee;
+  
+  let message = "🛒 My Order:\n\n";
+  cart.forEach(item => {
+    message += `🌿 ${item.name} x ${item.quantity} = ₹${item.price * item.quantity}\n`;
+  });
+  message += `\n📦 Item Total: ₹${subtotal}`;
+  message += `\n🚚 Delivery: ${deliveryFee === 0 ? 'FREE' : `₹${deliveryFee}`}`;
+  message += `\n💰 Total Payable: ₹${total}`;
+  message += `\n\n🎉 First time? Ask for 5% discount!`;
+  window.open(`https://wa.me/919058960992?text=${encodeURIComponent(message)}`, '_blank');
+};
+
+// Wishlist functions
+function saveWishlist() {
+  localStorage.setItem('podha_wishlist', JSON.stringify(wishlist));
+  updateWishlistCount();
+}
+
+function updateWishlistCount() {
+  const count = wishlist.length;
+  const wishlistCountSpan = document.getElementById('wishlistCount');
+  if (wishlistCountSpan) wishlistCountSpan.innerText = count;
+}
+
+function addToWishlist(id, name, price) {
+  const existing = wishlist.find(item => item.id === id);
+  if (!existing) {
+    wishlist.push({ id, name, price });
+    saveWishlist();
+    showToast(`${name} added to wishlist!`);
+  } else {
+    showToast(`${name} already in wishlist`);
+  }
+}
+
+function removeFromWishlist(id) {
+  wishlist = wishlist.filter(item => item.id !== id);
+  saveWishlist();
+  displayWishlistItems();
+}
+
+function displayWishlistItems() {
+  const container = document.getElementById('wishlistItemsList');
+  if (!container) return;
+  
+  if (wishlist.length === 0) {
+    container.innerHTML = '<p style="text-align: center;">Your wishlist is empty</p>';
+    return;
+  }
+  
+  container.innerHTML = wishlist.map(item => `
+    <div style="display: flex; justify-content: space-between; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #eee;">
+      <div><strong>${item.name}</strong><br>₹${item.price}</div>
+      <div>
+        <button onclick="addToCart(${item.id}, '${item.name}', ${item.price}, ${item.price}, ''); removeFromWishlist(${item.id})" style="background: #2e7d32; color: white; border: none; border-radius: 5px; padding: 5px 10px; margin-right: 5px; cursor: pointer;">🛒 Add to Cart</button>
+        <button onclick="removeFromWishlist(${item.id})" style="background: none; border: none; color: #d32f2f; cursor: pointer;">Remove</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function openWishlistModal() {
+  displayWishlistItems();
+  document.getElementById('wishlistModal').style.display = 'flex';
+}
+
+function closeWishlistModal() {
+  document.getElementById('wishlistModal').style.display = 'none';
+}
+
+document.getElementById('wishlistIconBtn').onclick = openWishlistModal;
+document.getElementById('wishlistCheckoutBtn').onclick = () => {
+  if (wishlist.length === 0) {
+    showToast('Your wishlist is empty');
+    return;
+  }
+  let message = "🤍 My Wishlist:\n\n";
+  wishlist.forEach(item => {
+    message += `🌿 ${item.name} - ₹${item.price}\n`;
+  });
+  window.open(`https://wa.me/919058960992?text=${encodeURIComponent(message)}`, '_blank');
+};
+
+// Coupon functionality
+document.getElementById('applyCouponBtn').onclick = () => {
+  const coupon = document.getElementById('couponInput').value.trim();
+  if (coupon === 'PODHA10') {
+    showToast('🎉 Coupon applied! 10% off on next order');
+  } else if (coupon === 'PODHA5') {
+    showToast('🎉 Coupon applied! 5% off on next order');
+  } else if (coupon === '') {
+    showToast('Please enter a coupon code');
+  } else {
+    showToast('Invalid coupon code');
+  }
+};
+
+// Initialize
+updateCartCount();
+updateWishlistCount();
+displayCartSidebarItems();
+// Accordion functionality for offers
+document.querySelectorAll('.offer-title').forEach(title => {
+  title.addEventListener('click', () => {
+    const parent = title.parentElement;
+    parent.classList.toggle('active');
+  });
+});
+</script>
+
+</body>
+</html>

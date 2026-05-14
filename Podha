@@ -767,7 +767,7 @@ startCountdown();
 // Product Data
 const plants = [
  
-  { id: 2, name: "Tulsi Plant!", mrp: 45, price: 19, stock: "In Stock", qualities: ["🌿 Medicinal", "🌿 Sacred plant", "🌿 Controls Sugar"], images: ["https://i.ibb.co/8gpBmc2J/IMG-20260513-091119.png", "https://i.ibb.co/B2D1S7JP/file-00000000b0d071fdb04fb4e03f1d7105.png","https://i.ibb.co/CsD26GG1/file-0000000091ac71fdb6b262e8df965bcd.png","https://i.ibb.co/jZhbyBLs/file-00000000176471f8883b571ee068a350.png" ] },
+  { id: 2, name: "Tulsi ", mrp: 45, price: 19, stock: "In Stock", qualities: ["🌿 Medicinal", "🌿 Sacred plant", "🌿 Controls Sugar"], images: ["https://i.ibb.co/8gpBmc2J/IMG-20260513-091119.png", "https://i.ibb.co/B2D1S7JP/file-00000000b0d071fdb04fb4e03f1d7105.png","https://i.ibb.co/CsD26GG1/file-0000000091ac71fdb6b262e8df965bcd.png","https://i.ibb.co/jZhbyBLs/file-00000000176471f8883b571ee068a350.png" ] },
   { id: 19, name: "Bailpatrika", mrp:121 , price:51 , stock: "In Stock", qualities: ["🌿 Sacred", "🌿Lord Shiv","🌿 Positive"], images: ["https://i.ibb.co/twXQ5YGY/IMG-20260513-092643.png","https://i.ibb.co/WNKGg355/IMG-20260513-092511.png","https://i.ibb.co/mVgjgWqs/file-00000000ea1471f8863ae82060c7ccdd.png","https://i.ibb.co/Mypp81cs/IMG-20260513-092553.png"] },
  
 { id: 4, name: "Rose", mrp: 120, price: 79, stock: "Low Stock", qualities: ["🌿 Fresh Flowers", "🌿Skin benefits", "🌿 Elegant"], colors: ["#FF0000", "#F29A9A", "#FFD9E6","#F2E8C9"], images: ["https://i.ibb.co/p6nhZ99Q/IMG-20260419-192734.jpg","https://i.ibb.co/b5nY4kb0/IMG-20260429-104311.jpg","https://i.ibb.co/gbMptNCt/IMG-20260429-105948.jpg","https://i.ibb.co/PZSR7YwN/IMG-20260429-110952-1.jpg"] }  ,
